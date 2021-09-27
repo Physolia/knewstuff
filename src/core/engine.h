@@ -506,6 +506,14 @@ public:
      */
     void setPageSize(int pageSize);
 
+    /**
+     * @returns the page size we previously set
+     * @see requestData(int,int)
+     *
+     * @since 5.88
+     */
+    int pageSize() const;
+
 #if KNEWSTUFFCORE_ENABLE_DEPRECATED_SINCE(5, 83)
     /**
      * Get a list of all the locations which will be used when searching for knsrc
